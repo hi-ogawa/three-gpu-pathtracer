@@ -1,4 +1,5 @@
-import { compress, encode, findTextureMinMax } from '@monogrid/gainmap-js/dist/encode.js';
+// TODO: invalid `exports` entry
+// import { compress, encode, findTextureMinMax } from '@monogrid/gainmap-js/dist/encode.js';
 import { encodeJPEGMetadata } from '../libs/libultrahdr.js';
 import { FloatType, LinearSRGBColorSpace, RGBAFormat } from 'three';
 
