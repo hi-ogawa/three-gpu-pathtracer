@@ -19,6 +19,6 @@ export default defineConfig({
 /*
 
 npx vite
-open http://localhost:5173/example/basic
+open http://localhost:5173/example/basic.html
 
 */
