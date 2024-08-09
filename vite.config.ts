@@ -14,6 +14,11 @@ export default defineConfig({
       'Cross-Origin-Embedder-Policy': 'require-corp'
     }
   },
+  build: {
+    rollupOptions: {
+      input: ["./example/index.html", "./example/basic.html"]
+    }
+  },
 })
 
 /*
@@ -21,4 +26,8 @@ export default defineConfig({
 npx vite
 open http://localhost:5173/example/basic.html
 
+// however build fails
+// https://github.com/vitejs/vite/pull/16103/files
+npx vite build
+[commonjs--resolver] Circular worker imports detected. Vite does not support it. Import chain: node_modules/three-mesh-bvh/src/workers/parallelMeshBVH.worker.js -> node_modules/three-mesh-bvh/src/workers/parallelMeshBVH.worker.js
 */
