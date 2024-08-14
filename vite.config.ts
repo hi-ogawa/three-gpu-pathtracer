@@ -23,11 +23,11 @@ export default defineConfig({
 
 /*
 
-npx vite
+npx vite --force
 open http://localhost:5173/example/basic.html
 
 // however build fails
-// https://github.com/vitejs/vite/pull/16103/files
+// (should be fixed in https://github.com/vitejs/vite/pull/17846)
 npx vite build
 [commonjs--resolver] Circular worker imports detected. Vite does not support it. Import chain: node_modules/three-mesh-bvh/src/workers/parallelMeshBVH.worker.js -> node_modules/three-mesh-bvh/src/workers/parallelMeshBVH.worker.js
 */
